@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>抖小有用性项目招募与渠道数据分析</title>
+<style>
+:root{--ink:#1F2430;--muted:#6F768A;--line:#E6E8F0;--panel:#fff;--surface:#F6F7FA;--blue:#5477C4;--blue-light:#EAF1FE;--orange:#CC6F47;--orange-light:#FFEDDE;--olive:#71B436;--olive-light:#D8ECBD;}
+*{box-sizing:border-box} body{margin:0;background:var(--surface);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC","Segoe UI",sans-serif;line-height:1.72}
+.page{max-width:1100px;margin:32px auto;padding:0 28px 64px} .hero{background:linear-gradient(135deg,#1F2430 0%,#2E4780 100%);color:#fff;padding:42px 46px;border-radius:22px;box-shadow:0 16px 40px rgba(31,36,48,.16)}
+.hero h1{margin:0 0 10px;font-size:32px;line-height:1.28} .hero p{margin:0;color:#DCE4F8} .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#A3BEFA;margin-bottom:10px}
+section{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:28px 32px;margin-top:20px;box-shadow:0 6px 18px rgba(31,36,48,.04)} h2{font-size:23px;margin:0 0 16px;line-height:1.35} h3{font-size:18px;margin:22px 0 8px} p{margin:8px 0 14px} ul,ol{padding-left:22px} li{margin:8px 0} strong{color:#18213A}
+.summary-list{list-style:none;padding:0;margin:0} .summary-list li{padding:13px 0 13px 20px;border-bottom:1px solid var(--line);position:relative} .summary-list li:last-child{border-bottom:0} .summary-list li:before{content:"";position:absolute;left:0;top:23px;width:8px;height:8px;border-radius:50%;background:#5477C4}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px} .kpi{padding:18px;border-radius:14px;border:1px solid var(--line);background:#FCFCFD} .kpi .label{font-size:12px;color:var(--muted)} .kpi .value{font:700 26px/1.3 "Segoe UI",sans-serif;margin-top:5px} .kpi .note{font-size:12px;color:var(--muted);margin-top:5px}
+.chart{width:100%;display:block;margin:20px auto 8px;border-radius:12px} .caption{font-size:12px;color:var(--muted);margin-bottom:18px} .callout{border-left:4px solid var(--orange);background:var(--orange-light);padding:14px 16px;border-radius:0 10px 10px 0;margin:16px 0}
+.note{border-left-color:var(--blue);background:var(--blue-light)} .recommend{border-left-color:var(--olive);background:var(--olive-light)}
+.table-wrap{overflow-x:auto;margin:14px 0 20px} table.data-table{border-collapse:collapse;width:100%;font-size:13px} .data-table th{text-align:left;background:#F4F5F7;color:#464C55;padding:10px 9px;border-bottom:1px solid #D7DBE7;white-space:nowrap} .data-table td{padding:9px;border-bottom:1px solid #ECEEF3;vertical-align:top} .data-table tr:hover td{background:#FAFBFD}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px} .mini{background:#FCFCFD;border:1px solid var(--line);border-radius:14px;padding:18px} .mini h3{margin-top:0}
+.footer{font-size:12px;color:var(--muted);text-align:center;margin-top:22px} @media(max-width:760px){.page{padding:0 14px}.hero{padding:30px 24px}.hero h1{font-size:26px}section{padding:22px 20px}.kpis{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}}
+</style>
+</head>
+<body><main class="page">
+<header class="hero" data-contract-section="title"><div class="eyebrow">Recruitment & Channel Analytics · 2026-06-15</div><h1>抖小有用性项目招募与渠道数据分析</h1><p>围绕代理漏斗、配额结构和抖音/小红书价值感知差异的结构化复盘</p></header>
+
+<section data-contract-section="executive-summary"><h2>Executive Summary｜执行摘要</h2>
+<ul class="summary-list">
+<li><strong>招募“有量但转化偏低”。</strong> 533 份代理提交最终完成任务 184 人，端到端转化率 34.5%；初审、客户审核、任务执行三个阶段分别流失 151、112、86 人，损耗并非集中在单一环节。</li>
+<li><strong>审核后的最大阻塞是配额不匹配。</strong> 270 名客户审核合格者中，86 人未完成任务，其中 71 人（82.6%）因配额不符合而未安排任务，仅 15 人明确不参加。相比继续扩大粗放招募，优先修正定向配额更可能提升产出。</li>
+<li><strong>修订目标已超额，但城市线级结构明显失衡。</strong> 配额表的修订预计为 200 人、已招募 257 人（128.5%）；四线达到 361%，五线仅 20%，新一线 92.5%。结构性超配与 71 人“过库但配额不符”相互印证。</li>
+<li><strong>两平台的“有用”不是同一种有用。</strong> 抖音更突出情绪解压（22.1% vs 10.7%，+11.4pp），小红书更突出兴趣资讯、电商决策和工作/专业价值；严格排除“随便看看”后，情绪价值差异仍为 +10.4pp，方向稳定。</li>
+</ul>
+<div class="kpis">
+<div class="kpi"><div class="label">代理提交</div><div class="value">533</div><div class="note">漏斗起点</div></div>
+<div class="kpi"><div class="label">客户审核合格</div><div class="value">270</div><div class="note">占提交 50.7%</div></div>
+<div class="kpi"><div class="label">任务完成</div><div class="value">184</div><div class="note">占提交 34.5%</div></div>
+<div class="kpi"><div class="label">配额不匹配</div><div class="value">71</div><div class="note">占审核后未完成 82.6%</div></div>
+</div></section>
+
+<section data-contract-section="key-findings"><h2>一、漏斗损耗分散，但审核后的结构性浪费最可控</h2>
+<p><strong>端到端仅约三分之一完成。</strong> 代理名单进入初审的通过率为 71.7%，初审到客户审核合格为 70.7%，客户审核合格到任务完成为 68.1%。三个阶段的阶段转化接近，说明需要同时管理上游名单质量、客户审核标准和任务分配效率。</p>
+<img class="chart" src="report_assets/01_overall_funnel.png" alt="总体招募漏斗"><div class="caption">口径：人数按 Sheet1 合计行；图中累计转化均以 533 份代理提交为分母。</div>
+<p><strong>最值得优先处理的是“已合格但无法安排”。</strong> 86 名客户审核合格但未完成者与表中两类去向完全对平：71 名配额不符合、15 名不参加。前者是可通过更准确的招募指令、配额预警和候选人调剂降低的运营损耗。</p>
+<img class="chart" src="report_assets/03_post_approval_blockers.png" alt="审核合格后的未完成人群去向"><div class="caption">两项合计 86 人，等于客户审核合格 270 人减任务完成 184 人。</div>
+<div class="callout recommend"><strong>管理含义：</strong> 下一轮不宜只追“提交量”。建议将“过库后配额可用率”纳入代理考核，目标是把 71 人的结构性损耗压缩，而不是继续用更多不匹配名单填充漏斗。</div></section>
+
+<section><h2>二、代理表现差异来自不同阶段，不能只看最终完成率</h2>
+<p><strong>江西、广西、北京和山东的端到端转化较高。</strong> 江西以 48.2% 居首，广西 44.1%、北京 43.3%、山东 40.0%；广州贡献 50 名完成者，是绝对量最大的渠道，但转化率 36.8%，略高于总体 34.5%。</p>
+<img class="chart" src="report_assets/02_agent_conversion.png" alt="各代理端到端转化率"><div class="caption">端到端转化率 = 任务完成 ÷ 代理提交总名单；小样本代理的百分比波动需谨慎解读。</div>
+<p><strong>相同的低结果可能对应不同问题。</strong> 四川客户审核合格后的完成率高达 85%，但初审通过率只有 45.2%，问题主要在上游名单质量；上海初审通过率 95.2%，但客户审核后完成率只有 46.2%，其 7 名配额不匹配占审核后未完成的全部，问题更偏向配额结构。</p>
+<div class="table-wrap"><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>代理/地区</th>
+      <th>提交</th>
+      <th>初审合格</th>
+      <th>客户合格</th>
+      <th>任务完成</th>
+      <th>端到端转化</th>
+      <th>配额不符</th>
+      <th>不参加</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>广州</td>
+      <td>136</td>
+      <td>104</td>
+      <td>71</td>
+      <td>50</td>
+      <td>36.8%</td>
+      <td>16</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>江西</td>
+      <td>56</td>
+      <td>46</td>
+      <td>37</td>
+      <td>27</td>
+      <td>48.2%</td>
+      <td>7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>山东</td>
+      <td>45</td>
+      <td>35</td>
+      <td>28</td>
+      <td>18</td>
+      <td>40.0%</td>
+      <td>10</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>四川</td>
+      <td>73</td>
+      <td>33</td>
+      <td>20</td>
+      <td>17</td>
+      <td>23.3%</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>江苏</td>
+      <td>56</td>
+      <td>30</td>
+      <td>23</td>
+      <td>16</td>
+      <td>28.6%</td>
+      <td>7</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>广西</td>
+      <td>34</td>
+      <td>27</td>
+      <td>19</td>
+      <td>15</td>
+      <td>44.1%</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>北京</td>
+      <td>30</td>
+      <td>27</td>
+      <td>19</td>
+      <td>13</td>
+      <td>43.3%</td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>福建</td>
+      <td>36</td>
+      <td>25</td>
+      <td>18</td>
+      <td>12</td>
+      <td>33.3%</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>东北</td>
+      <td>33</td>
+      <td>27</td>
+      <td>17</td>
+      <td>7</td>
+      <td>21.2%</td>
+      <td>10</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>上海</td>
+      <td>21</td>
+      <td>20</td>
+      <td>13</td>
+      <td>6</td>
+      <td>28.6%</td>
+      <td>7</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>广州代理</td>
+      <td>13</td>
+      <td>8</td>
+      <td>5</td>
+      <td>3</td>
+      <td>23.1%</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table></div>
+<div class="callout note"><strong>细分人群也呈现阶段性瓶颈：</strong> 新一线初审通过率仅 43.5%，明显低于其他线级；双低和“红高抖低”的客户审核通过率分别为 42.9% 和 43.5%，但一旦客户审核合格，后续完成率分别为 100% 和 88.9%。这更像审核/配额适配问题，而不是执行意愿问题。</div></section>
+
+<section><h2>三、配额总量超额掩盖了线级错配</h2>
+<p><strong>以修订预计 200 人为基准，已招募 257 人，达成 128.5%。</strong> 但超额主要集中在四线（65 人 vs 18 人，361%）和二线（97 人 vs 62 人，156%）；五线只有 1 人 vs 5 人，新一线也略低于修订预计。总量达成无法代表配额可用。</p>
+<img class="chart" src="report_assets/04_city_quota_attainment.png" alt="城市线级配额达成"><div class="caption">基准采用配额表中部的“预计数量”；原目标配额 360 人为另一套口径，见报告末尾 caveat。</div>
+<div class="table-wrap"><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>城市线级</th>
+      <th>修订预计</th>
+      <th>已招募</th>
+      <th>达成率</th>
+      <th>差额</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>一线</td>
+      <td>53</td>
+      <td>65</td>
+      <td>122.6%</td>
+      <td>+12</td>
+    </tr>
+    <tr>
+      <td>新一线</td>
+      <td>40</td>
+      <td>37</td>
+      <td>92.5%</td>
+      <td>-3</td>
+    </tr>
+    <tr>
+      <td>二线</td>
+      <td>62</td>
+      <td>97</td>
+      <td>156.5%</td>
+      <td>+35</td>
+    </tr>
+    <tr>
+      <td>三线</td>
+      <td>22</td>
+      <td>31</td>
+      <td>140.9%</td>
+      <td>+9</td>
+    </tr>
+    <tr>
+      <td>四线</td>
+      <td>18</td>
+      <td>65</td>
+      <td>361.1%</td>
+      <td>+47</td>
+    </tr>
+    <tr>
+      <td>五线</td>
+      <td>5</td>
+      <td>1</td>
+      <td>20.0%</td>
+      <td>-4</td>
+    </tr>
+  </tbody>
+</table></div>
+<p><strong>年龄与性别总体较平衡，城市线级更需要调度。</strong> 女性和男性均约为修订预计的 128%；年龄段仅“18岁以下/18-”为 9 人 vs 11 人，其余年龄段均超额。因而下一阶段应优先按线级而非性别扩招，并将四线超额候选人是否可以弹性靠近相邻配额作为明确规则。</p>
+<div class="callout"><strong>需要尽快统一目标口径：</strong> 表中同时存在原目标 360 人和修订预计 200 人。若 360 人仍是正式目标，257 人只完成 71.4%；若 200 人已替代原目标，则当前问题是结构与执行而非总量。这个判断会直接改变“继续扩招”还是“停止泛招、转向定向补缺”的决策。</div></section>
+
+<section><h2>四、抖音提供情绪价值，小红书更偏工具与决策价值</h2>
+<p><strong>兴趣入口不同。</strong> 抖音更常由“长期喜欢的主题”（37.8% vs 29.1%）和“刷到随便看看”（36.0% vs 28.1%）触发；小红书更常由“爱好特长”（23.3% vs 15.7%）以及“工作生活相关”（24.1% vs 14.1%）触发。Q1 为多选题，因此选项占比不能相加为 100%。</p>
+<p><strong>不感兴趣的第一原因高度一致，但衰退机制不同。</strong> 两平台约 36%–37% 的无兴趣源于主题完全不相关；小红书更常出现“以前感兴趣、现在不感兴趣”（13.9% vs 7.9%），抖音则更常出现“内容没用/没价值”（7.9% vs 4.9%）和“类似内容太多”（5.3% vs 2.9%）。</p>
+<p><strong>价值感知差异最集中在情绪解压。</strong> 抖音“获得情绪上的解压和满足”高出小红书 11.4 个百分点；小红书在兴趣资讯、电商购买决策、工作/专业领域等工具性价值上更高。</p>
+<img class="chart" src="report_assets/05_q3_platform_gap.png" alt="Q3 平台差异"><div class="caption">Q3 全量样本：抖音 n=580，小红书 n=680；正值为抖音更高。</div>
+<div class="table-wrap"><table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>题目</th>
+      <th>关键选项</th>
+      <th>抖音</th>
+      <th>小红书</th>
+      <th>差值(pp)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Q1 感兴趣</td>
+      <td>长期喜欢的主题</td>
+      <td>37.8%</td>
+      <td>29.1%</td>
+      <td>+8.6</td>
+    </tr>
+    <tr>
+      <td>Q1 感兴趣</td>
+      <td>和工作生活相关</td>
+      <td>14.1%</td>
+      <td>24.1%</td>
+      <td>-10.0</td>
+    </tr>
+    <tr>
+      <td>Q2 不感兴趣</td>
+      <td>主题完全无关</td>
+      <td>37.3%</td>
+      <td>36.4%</td>
+      <td>+0.9</td>
+    </tr>
+    <tr>
+      <td>Q2 不感兴趣</td>
+      <td>以前感兴趣、现在不感兴趣</td>
+      <td>7.9%</td>
+      <td>13.9%</td>
+      <td>-5.9</td>
+    </tr>
+    <tr>
+      <td>Q3 有用价值</td>
+      <td>获得情绪上的解压和满足</td>
+      <td>22.1%</td>
+      <td>10.7%</td>
+      <td>+11.4</td>
+    </tr>
+    <tr>
+      <td>Q3 有用价值</td>
+      <td>兴趣爱好相关的信息资讯</td>
+      <td>38.1%</td>
+      <td>42.8%</td>
+      <td>-4.7</td>
+    </tr>
+    <tr>
+      <td>Q3 有用价值</td>
+      <td>帮助电商购买决策</td>
+      <td>3.6%</td>
+      <td>7.8%</td>
+      <td>-4.2</td>
+    </tr>
+  </tbody>
+</table></div>
+<p><strong>情绪价值结论通过更严格口径检验。</strong> 当样本限定为“兴趣题=是我的兴趣”且排除“刷到随便看看”时，情绪解压差异仍为 +10.4pp；与此同时，“兴趣资讯”的差距从 -4.7pp 收窄到 -1.0pp。这说明抖音的情绪价值优势不是仅由弱兴趣浏览者造成，而兴趣资讯差异对样本定义更敏感。</p>
+<img class="chart" src="report_assets/06_q3_robustness.png" alt="Q3 三种口径稳健性"><div class="caption">三种 Q3 口径的同项对比；用于检验平台差异是否随兴趣样本筛选而改变。</div></section>
+
+<section data-contract-section="recommendations"><h2>建议的下一步</h2><ol>
+<li><strong>把招募从“总量驱动”切换为“缺口驱动”。</strong> 每日发布剩余线级×年龄×性别×活跃度的缺口清单，并对已满配额暂停泛招。</li>
+<li><strong>新增“可用过库率”作为代理指标。</strong> 除初审通过率、客户通过率、完成率外，追踪“客户合格且可分配任务 ÷ 客户合格”，直接约束配额错配。</li>
+<li><strong>对代理做分阶段治理。</strong> 四川优先改善上游名单筛选；上海、东北、山东优先解决配额预校验和合格后调剂；广州在保持规模的同时对齐整体转化基线。</li>
+<li><strong>统一 360/200/184 的口径与快照。</strong> 明确原目标、修订目标、已招募、正式用户、已完成与预计完成的互斥关系，并给每个数字加“截至日期”。</li>
+<li><strong>后续内容策略分别强化平台原生价值。</strong> 抖音侧重点可放在情绪满足与新鲜感，同时降低“没用/重复”；小红书侧继续强化可操作资讯、购买决策与专业/生活相关性。</li>
+</ol></section>
+
+<section data-contract-section="further-questions"><h2>进一步需要确认的问题</h2><ul>
+<li>配额表中的原目标 360 与修订预计 200，哪一个是 6月15日之后仍有效的正式目标？</li>
+<li>“已完成任务配额 184”与右侧 89 + 55 + 40 的周次拆分，是否分别代表“已分配/预计完成”与“实际完成”？</li>
+<li>71 名配额不匹配者能否跨代理、跨相邻线级或跨周调剂？若可以，理论上可回收多少完成量？</li>
+<li>问卷两平台样本是否来自同一批受访者？若为配对样本，应使用配对检验，而不是独立样本近似。</li>
+</ul></section>
+
+<section data-contract-section="caveats"><h2>Caveats｜口径与限制</h2><ul>
+<li>分析基于工作簿汇总表，没有个人级明细，无法复核去重、交叉标签冲突或同一人跨阶段状态。</li>
+<li>文件名显示数据截至 2026年6月15日，但表内没有统一的快照时间字段；不同表可能处于不同更新时点。</li>
+<li>Q1 为多选题；Q2/Q3 的选项计数与样本量对平。报告中的平台差异是描述性差异；显著性判断若用于正式结论，仍需确认抽样和配对设计。</li>
+<li>配额表的 360、200、184 与周次拆分存在并行口径，报告已分别解读但未擅自合并为单一进度。</li>
+</ul></section>
+
+<div class="footer">数据来源：抖小有用性项目代理及渠道数据20260615 FR 渠道.xlsx · 报告生成日期：2026年6月23日</div>
+</main></body></html>
